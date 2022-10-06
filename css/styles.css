@@ -71,3 +71,34 @@ p {
 .menu-list>li:not(:last-child) {
     margin-right: 38px;
 }
+
+.subtitle-team {
+    color: var(--dark);
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+.title-team {
+    color: var(--dark);
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+
+}
+
+.text-team {
+    color: var(--dark);
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.53;
+}
+
+.item-team {
+    color: var(--dark);
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.28;
+}
