@@ -7,6 +7,16 @@
     --grey: #808080;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -70,4 +80,122 @@ p {
 
 .menu-list>li:not(:last-child) {
     margin-right: 38px;
+}
+/* hero */
+
+.hero {
+  padding-top: 225px;
+  padding-bottom: 293px;
+  background-color: #000;
+}
+
+.hero > .hero-title {
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--hero-text-color);
+}
+
+.hero > .hero-text {
+  padding-bottom: 29px;
+  font-size: 22px;
+  line-height: 1.68;
+  text-align: center;
+  color: var(--hero-text-color);
+}
+
+.hero > .hero-button {
+  font-family: inherit;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 30px 9px 41px;
+  color: var(--main);
+  background-color: var(--accent);
+  font-size: 18px;
+  line-height: 1.55;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* section team  */
+.section-team {
+  background-color: var(--accent);
+  color: var(--main);
+  display: flex;
+}
+.section-team img {
+  max-width: 100%;
+}
+.section-team .paragraf {
+  font-size: 20px;
+  line-height: 1.65;
+  margin-top: 84px;
+  margin-left: 30px;
+  margin-right: 44px;
+}
+.section-team .title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  margin-top: 5px;
+  margin-left: 44px;
+}
+.section-team .paragraf-secondary {
+  font-size: 18px;
+  line-height: 1.55;
+  width: 606px;
+  margin-top: 26px;
+  margin-left: 30px;
+}
+.section-team button {
+  background-color: var(--accent);
+  color: var(--main);
+  font-size: 18px;
+  line-height: 1.55;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin-top: 17px;
+  margin-left: 30px;
+}
+
+/* section Request Callback */
+.section-callback {
+    background-color: var(--pale);
+   
+    display: flex;
+    
+}
+.section-callback img {
+    max-width: 100%;
+}
+
+.section-callback .title {
+    color: var(--dark);
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.2631;
+    margin-top: 78px;
+    margin-left: 30px;
+}
+
+.section-callback button {
+    color: var(--main);
+    background-color: var(--accent);
+    font-size: 18px;
+    line-height: 1.39;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    border-radius: 5px;
+    width: 620px;
+    height: 42px;
+    margin-top: 210px;
+    margin-left: 30px;
+    border: none;
+    
 }
