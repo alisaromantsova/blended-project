@@ -274,7 +274,7 @@ p {
 footer {
   background-color: var(--bcg-footer);
 }
-footer p {
+.text footer {
   color: var(--main);
   font-size: 18px;
   line-height: 1.5;
