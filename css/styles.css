@@ -1,5 +1,6 @@
 :root {
   --accent: #28a745;
+  --button-accent:#2bb14a;
   --main: #ffffff;
   --dark: #333333;
   --second-accent: #0284d0;
@@ -7,9 +8,21 @@
   --grey: #808080;
   --hero-text-color: #e9e9e9;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  width: 1360px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,25 +46,31 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-img{
+<<<<<<< Updated upstream
+=======
+img {
   display: block;
   max-width: 100%;
-   height: auto;
+  height: auto;
 }
-.container{
+.container {
   width: 1360px;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
 }
-header{
-  background-color: #000;
+
+header {
+  /* background-color: #000; */
 }
+>>>>>>> Stashed changes
+
 .page-header {
   display: flex;
   align-items: center;
   padding-top: 11px;
   padding-right: 48px;
+  background-color: #000000;
 }
 
 .logo {
@@ -68,7 +87,6 @@ header{
 .menu-list {
   display: flex;
   margin-left: auto;
-  gap: 38px;
 }
 
 .menu {
@@ -78,15 +96,31 @@ header{
   color: #ffffff;
 }
 
+<<<<<<< Updated upstream
+.menu-list > li:not(:last-child) {
+  margin-right: 38px;
+}
+=======
+.main-background {
+  max-width: 1360px;
+  margin: 0 auto;
+  background: url(../images/background-img.jpg) no-repeat;
+}
+
+>>>>>>> Stashed changes
 /* hero */
 
 .hero {
   padding-top: 225px;
   padding-bottom: 293px;
-  background-color: #000;
+  /* background-color: #000; */
 }
 
-.hero  .hero-title {
+<<<<<<< Updated upstream
+.hero > .hero-title {
+=======
+.hero-title {
+>>>>>>> Stashed changes
   margin-bottom: 25px;
   font-weight: 300;
   font-size: 55px;
@@ -95,7 +129,11 @@ header{
   color: var(--hero-text-color);
 }
 
-.hero  .hero-text {
+<<<<<<< Updated upstream
+.hero > .hero-text {
+=======
+.hero-text {
+>>>>>>> Stashed changes
   padding-bottom: 29px;
   font-size: 22px;
   line-height: 1.68;
@@ -103,12 +141,18 @@ header{
   color: var(--hero-text-color);
 }
 
-.hero  .hero-button {
+<<<<<<< Updated upstream
+.hero > .hero-button {
+=======
+.hero-button {
+>>>>>>> Stashed changes
   font-family: inherit;
-  display: block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
   margin-right: auto;
   margin-left: auto;
-  padding: 10px 30px 9px 41px;
+  padding: 10px 31px 9px 27px;
   color: var(--main);
   background-color: var(--accent);
   font-size: 18px;
@@ -116,6 +160,12 @@ header{
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
+  fill: var(--hero-text-color);
+  transition: background-color 250ms linear;
+}
+
+.hero-button:hover, .hero-button:focus {
+  background-color: var(--button-accent)
 }
 .services {
   background: var(--pale);
@@ -157,18 +207,20 @@ header{
   line-height: 1.5;
   text-align: center;
 }
+<<<<<<< Updated upstream
+=======
 
 /* blog */
 .blog {
   display: flex;
 }
 .blog-title {
-background-color: var(--second-accent);
-color: var(--main);
+  background-color: var(--second-accent);
+  color: var(--main);
 }
 .blog-date {
   font-size: 20px;
-  line-height: 1.65; 
+  line-height: 1.65;
   margin-top: 112px;
   margin-bottom: 5px;
   margin-left: 30px;
@@ -192,17 +244,22 @@ color: var(--main);
   line-height: 1.56;
   border: 1px solid var(--main);
   border-radius: 5px;
-  background-color: var(--second-accent);color: var(--main);
+  background-color: var(--second-accent);
+  color: var(--main);
   margin-left: 30px;
   width: 196px;
   padding: 11px 31px 10px 42px;
 }
 
+>>>>>>> Stashed changes
 /* section team  Ulia*/
 .section-team {
   background-color: var(--accent);
   color: var(--main);
   display: flex;
+}
+.section-team img {
+  max-width: 100%;
 }
 .section-team .paragraf {
   font-size: 20px;
@@ -301,11 +358,32 @@ color: var(--main);
   border: none;
 }
 .footer {
-  background-color:#333;
+<<<<<<< Updated upstream
+  background-color: var(--bcg-footer);
+=======
+  padding-top: 20px;
+  padding-bottom: 16px;
+  background-color: #333;
+>>>>>>> Stashed changes
 }
+
+.social-link{
+  display: flex;
+  margin-bottom: 10px;
+  gap: 25px;
+  justify-content: center;
+
+}
+.social-icon {
+  fill: var(--main)
+}
+
 .text-footer {
   color: var(--main);
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+}
+.sectiont {
+  
 }
