@@ -1,6 +1,6 @@
 :root {
   --accent: #28a745;
-  --button-accent:#2bb14a;
+  --button-accent: #2bb14a;
   --main: #ffffff;
   --dark: #333333;
   --second-accent: #0284d0;
@@ -13,16 +13,9 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  width: 1360px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,8 +39,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-<<<<<<< Updated upstream
-=======
+
 img {
   display: block;
   max-width: 100%;
@@ -60,17 +52,19 @@ img {
   padding: 0 30px;
 }
 
-header {
-  /* background-color: #000; */
+/* header{
+  background-color: #000;
+} */
+
+.main-background {
+  background: url(../images/background-img.jpg) no-repeat center;
 }
->>>>>>> Stashed changes
 
 .page-header {
   display: flex;
   align-items: center;
   padding-top: 11px;
   padding-right: 48px;
-  background-color: #000000;
 }
 
 .logo {
@@ -87,6 +81,7 @@ header {
 .menu-list {
   display: flex;
   margin-left: auto;
+  gap: 38px;
 }
 
 .menu {
@@ -96,18 +91,6 @@ header {
   color: #ffffff;
 }
 
-<<<<<<< Updated upstream
-.menu-list > li:not(:last-child) {
-  margin-right: 38px;
-}
-=======
-.main-background {
-  max-width: 1360px;
-  margin: 0 auto;
-  background: url(../images/background-img.jpg) no-repeat;
-}
-
->>>>>>> Stashed changes
 /* hero */
 
 .hero {
@@ -116,11 +99,7 @@ header {
   /* background-color: #000; */
 }
 
-<<<<<<< Updated upstream
-.hero > .hero-title {
-=======
 .hero-title {
->>>>>>> Stashed changes
   margin-bottom: 25px;
   font-weight: 300;
   font-size: 55px;
@@ -129,11 +108,7 @@ header {
   color: var(--hero-text-color);
 }
 
-<<<<<<< Updated upstream
-.hero > .hero-text {
-=======
 .hero-text {
->>>>>>> Stashed changes
   padding-bottom: 29px;
   font-size: 22px;
   line-height: 1.68;
@@ -141,11 +116,7 @@ header {
   color: var(--hero-text-color);
 }
 
-<<<<<<< Updated upstream
-.hero > .hero-button {
-=======
 .hero-button {
->>>>>>> Stashed changes
   font-family: inherit;
   display: flex;
   gap: 10px;
@@ -164,8 +135,9 @@ header {
   transition: background-color 250ms linear;
 }
 
-.hero-button:hover, .hero-button:focus {
-  background-color: var(--button-accent)
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-accent);
 }
 .services {
   background: var(--pale);
@@ -207,8 +179,6 @@ header {
   line-height: 1.5;
   text-align: center;
 }
-<<<<<<< Updated upstream
-=======
 
 /* blog */
 .blog {
@@ -251,7 +221,6 @@ header {
   padding: 11px 31px 10px 42px;
 }
 
->>>>>>> Stashed changes
 /* section team  Ulia*/
 .section-team {
   background-color: var(--accent);
@@ -358,24 +327,19 @@ header {
   border: none;
 }
 .footer {
-<<<<<<< Updated upstream
-  background-color: var(--bcg-footer);
-=======
   padding-top: 20px;
   padding-bottom: 16px;
-  background-color: #333;
->>>>>>> Stashed changes
+  background-color: var(--dark);
 }
 
-.social-link{
+.social-link {
   display: flex;
   margin-bottom: 10px;
   gap: 25px;
   justify-content: center;
-
 }
 .social-icon {
-  fill: var(--main)
+  fill: var(--main);
 }
 
 .text-footer {
@@ -383,7 +347,4 @@ header {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-}
-.sectiont {
-  
 }
