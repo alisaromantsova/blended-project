@@ -52,20 +52,15 @@ img {
   padding: 0 30px;
   position: relative;
 }
-.page-header::before{
-  content: '';
-  width: 1360px;
-  height: 768px;
-  background-image: url('../images/background-img.jpg');
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 .page-header {
   display: flex;
   align-items: center;
   padding: 11px 50px;
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+
 }
 .header-icon{
   margin-right: 10px;
@@ -75,7 +70,6 @@ img {
   font-size: 35px;
   line-height: 1.2;
   color: var(--accent);
-  display: block;
   display: flex;
   align-items: center;
 }
@@ -100,8 +94,11 @@ img {
 /* hero */
 
 .hero {
-  padding-top: 204px;
+  padding-top: 270px;
   padding-bottom: 293px;
+  background-image: url('../images/background-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   /* background-color: #000; */
 }
 
