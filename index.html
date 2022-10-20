@@ -25,40 +25,45 @@
     <!-- <div class="main-background"> -->
     <header>
       <div class="container">
-        <div class="main-background">
-          <nav class="page-header">
-            <a class="logo" href="/index.html">Finance <span class="logo-accent">Ledger</span></a>
-            <ul class="menu-list">
-              <li>
-                <a class="menu" href="#">Home</a>
-              </li>
-              <li>
-                <a class="menu" href="#">About</a>
-              </li>
-              <li>
-                <a class="menu" href="#">Cases</a>
-              </li>
-              <li>
-                <a class="menu" href="#">Blog</a>
-              </li>
-              <li>
-                <a class="menu" href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <section class="hero">
-            <h1 class="hero-title">The sky is the limit</h1>
-            <p class="hero-text">We provide world class financial assistance</p>
-            <button class="hero-button" type="button">
-              <svg class="contacts-icon" width="9" height="18">
-                <use href="./images/icons.svg#icon-angle-right"></use></svg
-              >Read more
-            </button>
-          </section>
-        </div>
+        <nav class="page-header">
+          <a class="logo" href="/index.html">
+            <svg width="40" height="35" class="header-icon">
+              <use href="../images/icons.svg#icon-book-open"></use>
+            </svg>
+            <span>Finance <span class="logo-accent">Ledger</span></span>
+          </a>
+          <ul class="menu-list">
+            <li>
+              <a class="menu" href="#">Home</a>
+            </li>
+            <li>
+              <a class="menu" href="#">About</a>
+            </li>
+            <li>
+              <a class="menu" href="#">Cases</a>
+            </li>
+            <li>
+              <a class="menu" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="menu" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">The sky is the limit</h1>
+          <p class="hero-text">We provide world class financial assistance</p>
+          <button class="hero-button" type="button">
+            <svg class="contacts-icon" width="9" height="18">
+              <use href="./images/icons.svg#icon-angle-right"></use></svg
+            >Read more
+          </button>
+        </div>
+      </section>
       <section class="services">
         <div class="container">
           <h2>Services</h2>
@@ -87,18 +92,20 @@
           </ul>
         </div>
       </section>
-      <section class="section-team">
+      <section class="section-solution">
         <div class="container">
-          <img src="./images/rectangle.jpg" alt="team" width="680" />
-          <div>
-            <p class="paragraf">What you are looking for</p>
-            <h2 class="title">We provide bespoke solutions</h2>
-            <p class="paragraf-secondary">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
-              quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
-              itaque rerum temporibus doloribus iste maiores deleniti?
-            </p>
-            <button type="button">Read more</button>
+          <div class="solution-container">
+            <img src="./images/rectangle.jpg" alt="team" width="680" />
+            <div>
+              <p class="paragraf">What you are looking for</p>
+              <h2 class="title">We provide bespoke solutions</h2>
+              <p class="paragraf-secondary">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
+                dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore
+                explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?
+              </p>
+              <button type="button">Read more</button>
+            </div>
           </div>
         </div>
       </section>
@@ -139,21 +146,23 @@
       </section>
       <section class="blog">
         <div class="container">
-          <div class="blog-title">
-            <p class="blog-date">April 16 2020</p>
-            <h2 class="blog-name">Blog post one</h2>
-            <p class="blog-list">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
-              quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
-              itaque rerum temporibus doloribus iste maiores deleniti?
-            </p>
-            <button type="button" class="blog-button">Read our blog</button>
+          <div class="blog-container">
+            <div class="blog-title">
+              <p class="blog-date">April 16 2020</p>
+              <h2 class="blog-name">Blog post one</h2>
+              <p class="blog-list">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
+                dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore
+                explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?
+              </p>
+              <button type="button" class="blog-button">Read our blog</button>
+            </div>
+            <img
+              src="./images/desktop.jpg"
+              alt="On the table is an open notebook, a cup of coffee, a tablet, a pen and two books on top of each other"
+              width="680"
+            />
           </div>
-          <img
-            src="./images/desktop.jpg"
-            alt="On the table is an open notebook, a cup of coffee, a tablet, a pen and two books on top of each other"
-            width="680"
-          />
         </div>
       </section>
       <section>
@@ -184,10 +193,12 @@
       </section>
       <section class="section-callback">
         <div class="container">
-          <img src="./images/working.jpg" alt="Person working on mobile" width="680" />
-          <div>
-            <h2 class="title">Request callback</h2>
-            <button class="callback-button">Send</button>
+          <div class="callback-container">
+            <img src="./images/working.jpg" alt="Person working on mobile" width="680" />
+            <div>
+              <h2 class="title">Request callback</h2>
+              <button class="callback-button">Send</button>
+            </div>
           </div>
         </div>
       </section>
