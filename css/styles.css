@@ -50,7 +50,7 @@ img {
   width: 1360px;
   margin-left: auto;
   margin-right: auto;
-  /* padding: 0 30px; */
+  padding: 0 28px;
   position: relative;
 }
 
@@ -149,13 +149,55 @@ img {
 
 .services {
   background: var(--pale);
+  padding-top: 40px;
+  padding-bottom: 19px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.servises-list{
+  display: flex;
+  gap: 71px;
+  justify-content: center;
+}
+.servises-item{
+  width: 362px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servises-icon{
+  height: 67px;
+  width: 67px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: var(--main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servises-icon>svg{
+  fill: currentColor;
 }
 
 .title-services {
   color: var(--dark);
   font-size: 20px;
+  font-weight: 400;
   line-height: 1.65;
   text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .text-services {
@@ -163,7 +205,6 @@ img {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-  white-space: pre;
 }
 
 /* section team  Ulia*/
@@ -190,7 +231,7 @@ img {
   font-size: 38px;
   line-height: 1.26;
   margin-top: 5px;
-  margin-left: 44px;
+  margin-left: 30px;
 }
 
 .section-solution .paragraf-secondary {
@@ -212,6 +253,9 @@ img {
   margin-top: 17px;
   margin-left: 30px;
   padding: 11px 42px;
+}
+.solution-img{
+  margin-left: -30px;
 }
 
 /* gallary */
@@ -253,10 +297,14 @@ img {
 /* blog */
 .blog {
   background-color: var(--second-accent);
+
+  position: relative;
 }
 
 .blog-container {
   display: flex;
+  padding-top: 112px;
+    padding-bottom: 112px;
 }
 
 .blog-title {
@@ -267,23 +315,20 @@ img {
 .blog-date {
   font-size: 20px;
   line-height: 1.65;
-  margin-top: 112px;
   margin-bottom: 5px;
-  margin-left: 30px;
+
 }
 
 .blog-name {
   font-size: 38px;
   line-height: 1.26;
   font-weight: 300;
-  margin-left: 30px;
   margin-bottom: 26px;
 }
 
 .blog-list {
   font-size: 18px;
   line-height: 1.56;
-  margin-left: 30px;
   margin-bottom: 17px;
   width: 606px;
 }
@@ -295,9 +340,13 @@ img {
   border-radius: 5px;
   background-color: var(--second-accent);
   color: var(--main);
-  margin-left: 30px;
   width: 196px;
   padding: 11px 31px 10px 42px;
+}
+.blog-img{
+  position: absolute;
+  top: 0;
+  left: 50%;
 }
 
 
@@ -413,7 +462,9 @@ img {
   margin-left: 30px;
   border: none;
 }
-
+.callback-img{
+  margin-left: -30px;
+}
 .footer {
   padding-top: 20px;
   padding-bottom: 16px;
