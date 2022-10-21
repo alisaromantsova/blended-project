@@ -45,6 +45,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .container {
   width: 1360px;
   margin-left: auto;
@@ -52,20 +53,23 @@ img {
   padding: 0 30px;
   position: relative;
 }
+
 .page-header {
   display: flex;
   align-items: center;
   padding: 11px 50px;
-position: absolute;
-width: 100%;
-top: 0;
-left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 
 }
-.header-icon{
+
+.header-icon {
   margin-right: 10px;
   fill: var(--accent);
 }
+
 .logo {
   font-size: 35px;
   line-height: 1.2;
@@ -142,15 +146,18 @@ left: 0;
 .hero-button:focus {
   background-color: var(--button-accent);
 }
+
 .services {
   background: var(--pale);
 }
+
 .title-services {
   color: var(--dark);
   font-size: 20px;
   line-height: 1.65;
   text-align: center;
 }
+
 .text-services {
   color: var(--dark);
   font-size: 18px;
@@ -158,14 +165,16 @@ left: 0;
   text-align: center;
   white-space: pre;
 }
+
 /* section team  Ulia*/
 .section-solution {
   background-color: var(--accent);
   color: var(--main);
- 
+
 }
-.solution-container{
-display: flex;
+
+.solution-container {
+  display: flex;
 }
 
 .section-solution .paragraf {
@@ -204,6 +213,7 @@ display: flex;
   margin-left: 30px;
   padding: 11px 42px;
 }
+
 /* gallary */
 .gallery {
   background: var(--light-bcg);
@@ -230,16 +240,19 @@ display: flex;
 }
 
 /* blog */
-.blog{
-background-color: var(--second-accent);
+.blog {
+  background-color: var(--second-accent);
 }
-.blog-container{
+
+.blog-container {
   display: flex;
 }
+
 .blog-title {
-  
+
   color: var(--main);
 }
+
 .blog-date {
   font-size: 20px;
   line-height: 1.65;
@@ -247,6 +260,7 @@ background-color: var(--second-accent);
   margin-bottom: 5px;
   margin-left: 30px;
 }
+
 .blog-name {
   font-size: 38px;
   line-height: 1.26;
@@ -254,6 +268,7 @@ background-color: var(--second-accent);
   margin-left: 30px;
   margin-bottom: 26px;
 }
+
 .blog-list {
   font-size: 18px;
   line-height: 1.56;
@@ -261,6 +276,7 @@ background-color: var(--second-accent);
   margin-bottom: 17px;
   width: 606px;
 }
+
 .blog-button {
   font-size: 18px;
   line-height: 1.56;
@@ -276,11 +292,20 @@ background-color: var(--second-accent);
 
 /* team section Margo*/
 
+.list-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+}
+
 .subtitle-team {
   color: var(--dark);
   font-family: inherit;
   font-size: 20px;
   line-height: 1.65;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .title-team {
@@ -289,25 +314,67 @@ background-color: var(--second-accent);
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
+  text-align: center;
+  margin-bottom: 34px;
 }
+
+.description-team {
+  color: var(--dark);
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.53;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.card-team {
+  margin-bottom: 11px;
+}
+
+.card-team-item {
+  position: relative;
+}
+
 .text-team {
   color: var(--dark);
   font-family: inherit;
   font-size: 18px;
   line-height: 1.53;
+  text-align: center;
 }
+
 .item-team {
   color: var(--dark);
   font-family: inherit;
   font-weight: 400;
   font-size: 25px;
   line-height: 1.28;
+  text-align: center;
+  margin-bottom: 12px;
 }
+
+.container-team {
+  padding: 49px 31px 57px 30px;
+}
+
+.team-social-icon {
+  fill: var(--main);
+}
+
+.team-social-list {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  top: 130px;
+  left: 102px;
+}
+
 /* section Request Callback */
 .section-callback {
   background-color: var(--pale);
 }
-.callback-container{
+
+.callback-container {
   display: flex;
 }
 
@@ -335,6 +402,7 @@ background-color: var(--second-accent);
   margin-left: 30px;
   border: none;
 }
+
 .footer {
   padding-top: 20px;
   padding-bottom: 16px;
@@ -347,6 +415,7 @@ background-color: var(--second-accent);
   gap: 25px;
   justify-content: center;
 }
+
 .social-icon {
   fill: var(--main);
 }
