@@ -121,6 +121,8 @@ img {
   line-height: 1.68;
   text-align: center;
   color: var(--hero-text-color);
+  border: none;
+  outline: none;
 }
 
 .hero-button {
