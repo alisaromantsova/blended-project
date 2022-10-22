@@ -62,7 +62,6 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-
 }
 
 .header-icon {
@@ -161,24 +160,24 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.servises-list{
+.servises-list {
   display: flex;
   gap: 71px;
   justify-content: center;
 }
-.servises-item{
+.servises-item {
   width: 362px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.servises-icon{
+.servises-icon {
   height: 67px;
   width: 67px;
   border-radius: 50%;
@@ -188,7 +187,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.servises-icon>svg{
+.servises-icon > svg {
   fill: currentColor;
 }
 
@@ -213,7 +212,6 @@ img {
 .section-solution {
   background-color: var(--accent);
   color: var(--main);
-
 }
 
 .solution-container {
@@ -256,7 +254,7 @@ img {
   margin-left: 30px;
   padding: 11px 42px;
 }
-.solution-img{
+.solution-img {
   margin-left: -30px;
 }
 
@@ -290,7 +288,7 @@ img {
   margin-bottom: 34px;
 }
 
-.gallery-list{
+.gallery-list {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
@@ -306,11 +304,10 @@ img {
 .blog-container {
   display: flex;
   padding-top: 112px;
-    padding-bottom: 112px;
+  padding-bottom: 112px;
 }
 
 .blog-title {
-
   color: var(--main);
 }
 
@@ -318,7 +315,6 @@ img {
   font-size: 20px;
   line-height: 1.65;
   margin-bottom: 5px;
-
 }
 
 .blog-name {
@@ -345,12 +341,11 @@ img {
   width: 196px;
   padding: 11px 31px 10px 42px;
 }
-.blog-img{
+.blog-img {
   position: absolute;
   top: 0;
   left: 50%;
 }
-
 
 /* team section Margo*/
 
@@ -430,14 +425,13 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-    opacity: 0;
+  opacity: 0;
 }
-.list-team-item{
+.list-team-item {
   cursor: pointer;
 }
-.list-team-item:hover .team-social-list{
+.list-team-item:hover .team-social-list {
   opacity: 1;
-
 }
 
 /* section Request Callback */
@@ -473,7 +467,7 @@ img {
   margin-left: 30px;
   border: none;
 }
-.callback-img{
+.callback-img {
   margin-left: -30px;
 }
 .footer {
@@ -498,4 +492,39 @@ img {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  overflow: scroll;
+  background-color: rgba(47, 48, 58, 0.4);
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.modal-window {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  /* top: 50px; */
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  /* transform: translateX(-50%); */
+}
+
+body.modal-open {
+  overflow: hidden;
 }
