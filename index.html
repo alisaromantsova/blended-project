@@ -116,7 +116,7 @@
                 dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore
                 explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?
               </p>
-              <button type="button">Read more</button>
+              <button type="button" class="solution-button">Read more</button>
             </div>
           </div>
         </div>
@@ -328,7 +328,7 @@
             />
             <div>
               <h2 class="title">Request callback</h2>
-              <button class="callback-button">Send</button>
+              <button type="button" class="callback-button">Send</button>
             </div>
           </div>
         </div>
@@ -337,26 +337,30 @@
     <footer>
       <section class="footer">
         <div class="container">
-          <ul class="social-link">
-            <li>
-              <svg class="social-icon" width="35" height="35">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a href=""
+                ><svg class="social-icon" width="35" height="35">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
             </li>
-            <li>
-              <svg class="social-icon" width="35" height="35">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
+            <li class="social-list-item">
+              <a href=""
+                ><svg class="social-icon" width="35" height="35">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
             </li>
-            <li>
-              <svg class="social-icon" width="35" height="40">
-                <use href="./images/icons.svg#icon-youtube"></use>
-              </svg>
+            <li class="social-list-item">
+              <a href=""
+                ><svg class="social-icon" width="35" height="40">
+                  <use href="./images/icons.svg#icon-youtube"></use></svg
+              ></a>
             </li>
-            <li>
-              <svg class="social-icon" width="31" height="35">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
+            <li class="social-list-item">
+              <a href=""
+                ><svg class="social-icon" width="31" height="35">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
           <p class="text-footer">Copyright © 2021 - FinanceLedger</p>
@@ -364,11 +368,15 @@
       </section>
     </footer>
 
+    <!-- Modal window -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button class="button-close" type="button" data-modal-close>x</button>
       </div>
     </div>
+
+    <!-- js-script -->
 
     <script src="./js/modal.js"></script>
   </body>
