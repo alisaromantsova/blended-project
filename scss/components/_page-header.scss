@@ -1,0 +1,45 @@
+.page-header {
+    display: flex;
+    align-items: center;
+    padding: 11px 50px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header-icon {
+    margin-right: 10px;
+    fill: var(--accent);
+}
+
+.logo {
+    font-size: 35px;
+    line-height: 1.2;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+}
+
+.logo-accent {
+    color: var(--main);
+}
+
+.menu-list {
+    display: flex;
+    margin-left: auto;
+    gap: 38px;
+}
+
+.menu {
+    display: block;
+    font-size: 18px;
+    line-height: 1.56;
+    color: #ffffff;
+    transition: color 250ms linear;
+}
+
+.menu:hover,
+.menu:focus {
+    color: var(--accent);
+}
