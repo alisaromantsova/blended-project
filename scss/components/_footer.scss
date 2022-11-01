@@ -4,29 +4,29 @@
     background-color: var(--dark);
 }
 
-.social-list {
+.footer__list {
     display: flex;
     margin-bottom: 10px;
     gap: 25px;
     justify-content: center;
 }
 
-.social-list-item {
+.footer__social {
     cursor: pointer;
 }
 
-.social-list-item:hover .social-icon,
-.social-list-item:focus .social-icon {
+.footer__social:hover .footer__icon,
+.footer__social:focus .footer__icon {
     cursor: pointer;
     fill: var(--accent);
 }
 
-.social-icon {
+.footer__icon {
     fill: var(--main);
     transition: fill 250ms linear;
 }
 
-.text-footer {
+.footer__text {
     color: var(--main);
     font-size: 18px;
     line-height: 1.5;
