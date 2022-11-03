@@ -317,19 +317,23 @@
           </div>
         </div>
       </section>
-      <section class="section-callback">
+      <section class="callback">
         <div class="container">
-          <div class="callback-container">
+          <div class="callback__container">
             <img
-              class="callback-img"
+              class="callback__img"
               src="./images/working.jpg"
               alt="Person working on mobile"
               width="680"
             />
             <div>
-              <h2 class="title">Request callback</h2>
-              <button type="button" class="callback-button">Send</button>
-            </div>
+              <form  class="callback__form" name="callback_form">
+                 <h2 class="callback__title">Request callback</h2>
+                <input class="callback__input callback__input--margin" type="text" name="name" placeholder="Enter your name">
+                <input class="callback__input" type="email" name=" email" placeholder="Enter email*">
+                <button type="submit" class="callback__button">Send</button>
+              </form>
+          </div>
           </div>
         </div>
       </section>
