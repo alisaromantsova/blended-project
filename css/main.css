@@ -534,6 +534,9 @@ img {
   line-height: 28px;
   color: var(--grey);
   padding: 5px 5px;
+  border: 1px solid #F5F5F5;
+  border-radius: 0px;
+  outline: none;
 }
 
 .callback__input--margin {
