@@ -515,46 +515,60 @@ img {
   opacity: 1;
 }
 
-.section-callback {
+.callback {
   background-color: var(--pale);
 }
 
-.callback-container {
+.callback__container {
   display: flex;
 }
 
-.section-callback .title {
+.callback__form {
+  padding: 78px 30px;
+}
+
+.callback__input {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--grey);
+  padding: 5px 5px;
+}
+
+.callback__input--margin {
+  margin-bottom: 36px;
+}
+
+.callback__title {
   color: var(--dark);
   font-weight: 300;
   font-size: 38px;
   line-height: 1.2631;
-  margin-top: 78px;
-  margin-left: 30px;
+  margin-bottom: 34px;
 }
 
-.callback-button {
+.callback__button {
   color: var(--main);
   background-color: var(--accent);
   font-size: 18px;
   line-height: 1.39;
   cursor: pointer;
   text-align: center;
-  position: absolute;
+  margin-top: 60px;
   border-radius: 5px;
   width: 620px;
   height: 42px;
-  margin-top: 210px;
-  margin-left: 30px;
   border: none;
   transition: background-color 250ms linear;
 }
 
-.callback-button:hover,
-.callback-button:focus {
+.callback__button:hover,
+.callback__button:focus {
   background-color: var(--button-accent);
 }
 
-.callback-img {
+.callback__img {
   margin-left: -30px;
 }
 
