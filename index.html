@@ -194,7 +194,7 @@
 </html>
 =======
   <body>
-    <!-- <div class="main-background"> -->
+    <!-- Header -->
     <header>
       <div class="container">
         <nav class="nav-block">
@@ -225,50 +225,55 @@
       </div>
     </header>
     <main>
+      <!-- Hero -->
+
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">The sky is the limit</h1>
-          <p class="hero-text">We provide world class financial assistance</p>
-          <button class="hero-button" type="button" data-modal-open>
-            <svg class="contacts-icon" width="9" height="18">
+          <h1 class="hero__title">The sky is the limit</h1>
+          <p class="hero__text">We provide world class financial assistance</p>
+          <button class="hero__button" type="button" data-modal-open>
+            <svg class="hero__icon" width="9" height="18">
               <use href="./images/icons.svg#icon-angle-right"></use>
             </svg>
             Read more
           </button>
         </div>
       </section>
+
+      <!-- Services -->
+
       <section class="services">
         <div class="container">
           <h2 class="visually-hidden">Services</h2>
-          <ul class="servises-list">
-            <li class="servises-item">
-              <div class="servises-icon">
+          <ul class="services__list">
+            <li class="services__item">
+              <div class="services__icon">
                 <svg width="35" height="35">
                   <use href="./images/icons.svg#icon-university"></use>
                 </svg>
               </div>
-              <h3 class="title-services">Investmant banking</h3>
-              <p class="text-services">
+              <h3 class="services__title">Investmant banking</h3>
+              <p class="services__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
                 necessitatibus!
               </p>
             </li>
-            <li class="servises-item">
-              <div class="servises-icon">
+            <li class="services__item">
+              <div class="services__icon">
                 <svg width="35" height="35"><use href="./images/icons.svg#icon-group"></use></svg>
               </div>
-              <h3 class="title-services">Portfolio manager</h3>
-              <p class="text-services">
+              <h3 class="services__title">Portfolio manager</h3>
+              <p class="services__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
                 necessitatibus!
               </p>
             </li>
-            <li class="servises-item">
-              <div class="servises-icon">
+            <li class="services__item">
+              <div class="services__icon">
                 <svg width="35" height="35"><use href="./images/icons.svg#icon-pencil"></use></svg>
               </div>
-              <h3 class="title-services">Tax & custudio</h3>
-              <p class="text-services">
+              <h3 class="services__title">Tax & custudio</h3>
+              <p class="services__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
                 necessitatibus!
               </p>
@@ -276,23 +281,27 @@
           </ul>
         </div>
       </section>
-      <section class="section-solution">
+
+      <!-- Solution -->
+
+      <section class="solution">
         <div class="container">
-          <div class="solution-container">
-            <img class="solution-img" src="./images/rectangle.jpg" alt="team" width="680" />
-            <div>
-              <p class="paragraf">What you are looking for</p>
-              <h2 class="title">We provide bespoke solutions</h2>
-              <p class="paragraf-secondary">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
-                dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore
-                explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?
-              </p>
-              <button type="button" class="solution-button">Read more</button>
-            </div>
+          <img class="solution__img" src="./images/rectangle.jpg" alt="team" width="680" />
+          <div>
+            <p class="solution__pre-title">What you are looking for</p>
+            <h2 class="solution__title">We provide bespoke solutions</h2>
+            <p class="solution__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+              quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+              itaque rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <button type="button" class="solution__button">Read more</button>
           </div>
         </div>
       </section>
+
+      <!-- Gallery -->
+
       <section class="gallery">
         <div class="container">
           <p class="subtitle-gallery">This is what we do</p>
@@ -499,13 +508,23 @@
               width="680"
             />
             <div>
-              <form  class="callback__form" name="callback_form">
-                 <h2 class="callback__title">Request callback</h2>
-                <input class="callback__input callback__input--margin" type="text" name="name" placeholder="Enter your name">
-                <input class="callback__input" type="email" name=" email" placeholder="Enter email*">
+              <form class="callback__form" name="callback_form">
+                <h2 class="callback__title">Request callback</h2>
+                <input
+                  class="callback__input callback__input--margin"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                />
+                <input
+                  class="callback__input"
+                  type="email"
+                  name=" email"
+                  placeholder="Enter email*"
+                />
                 <button type="submit" class="callback__button">Send</button>
               </form>
-          </div>
+            </div>
           </div>
         </div>
       </section>
@@ -547,8 +566,54 @@
     <!-- Modal window -->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal-window">
-        <button class="button-close" type="button" data-modal-close>x</button>
+      <div class="modal">
+        <button type="button" class="modal__close-button" aria-label="Закрити" data-modal-close>
+          <svg class="modal__close-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <p class="modal__title">If you want to see more, subscribe to the newsletter!</p>
+        <form class="modal__form-field">
+          <label class="modal__label"
+            >Name
+            <span class="modal__input-form">
+              <input class="modal__input" type="text" name="name" required autofocus />
+              <svg class="modal__form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-contact"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal__label"
+            >E-mail
+            <span class="modal__input-form">
+              <input class="modal__input" type="email" name="email" required />
+              <svg class="modal__form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+
+          <div class="modal__checkbox-container">
+            <input
+              class="modal__checkbox visually-hidden"
+              type="checkbox"
+              name="conditions"
+              id="checkbox"
+              required
+            />
+
+            <label class="modal__checkbox-label" for="checkbox"
+              ><svg class="modal__checkbox-vector" width="16" height="15">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю
+              <a href="#" class="modal__checkbox-link"> Умови договору</a>
+            </label>
+          </div>
+
+          <button class="modal__send-button" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
 
