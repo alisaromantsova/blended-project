@@ -1,11 +1,8 @@
-.list-team {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 19px;
+.team__container {
+    padding: 49px 31px 57px 30px;
 }
 
-.subtitle-team {
+.team__subtitle {
     color: var(--dark);
     font-family: inherit;
     font-size: 20px;
@@ -14,7 +11,7 @@
     margin-bottom: 16px;
 }
 
-.title-team {
+.team__title {
     color: var(--dark);
     font-family: inherit;
     font-weight: 300;
@@ -24,7 +21,7 @@
     margin-bottom: 34px;
 }
 
-.description-team {
+.team__text {
     color: var(--dark);
     font-family: inherit;
     font-size: 18px;
@@ -33,15 +30,30 @@
     margin-bottom: 45px;
 }
 
-.card-team {
-    margin-bottom: 11px;
+.team__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
 }
 
-.card-team-item {
+
+
+
+.team__item {
+    cursor: pointer;
+}
+
+.team__item:hover .team__social,
+.team__item:hover .team__card::after {
+    opacity: 1;
+}
+
+.team__card {
     position: relative;
 }
 
-.card-team-item::after {
+.team__card::after {
     content: '';
     position: absolute;
     top: 0%;
@@ -53,39 +65,21 @@
     transition: opacity 250ms linear;
 }
 
-.text-team {
-    color: var(--dark);
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 1.53;
-    text-align: center;
+.team___img {
+    margin-bottom: 11px;
 }
 
-.item-team {
-    color: var(--dark);
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 1.28;
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-.container-team {
-    padding: 49px 31px 57px 30px;
-}
-
-.team-social-icon {
+.team__icon {
     fill: var(--main);
     transition: fill 250ms linear;
 }
 
-.team-social-icon:hover {
+.team__icon:hover {
     fill: var(--accent);
     stroke: rgba(47, 48, 58, 0.4);
 }
 
-.team-social-list {
+.team__social {
     display: flex;
     gap: 25px;
     position: absolute;
@@ -96,11 +90,20 @@
     z-index: 1;
 }
 
-.list-team-item {
-    cursor: pointer;
+.team__name {
+    color: var(--dark);
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.28;
+    text-align: center;
+    margin-bottom: 12px;
 }
 
-.list-team-item:hover .team-social-list,
-.list-team-item:hover .card-team-item::after {
-    opacity: 1;
+.team__description {
+    color: var(--dark);
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.53;
+    text-align: center;
 }
