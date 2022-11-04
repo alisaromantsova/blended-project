@@ -1,37 +1,36 @@
-.section-solution {
-    background-color: var(--accent);
-    color: var(--main);
-}
+.solution {
+  background-color: var(--accent);
+  color: var(--main);
 
-.solution-container {
+  .container {
     display: flex;
-}
+  }
 
-.section-solution .paragraf {
+  &__pre-title {
     font-size: 20px;
     line-height: 1.65;
     margin-top: 84px;
     margin-left: 30px;
     margin-right: 44px;
-}
+  }
 
-.section-solution .title {
+  &__title {
     font-weight: 300;
     font-size: 38px;
     line-height: 1.26;
     margin-top: 5px;
     margin-left: 30px;
-}
+  }
 
-.section-solution .paragraf-secondary {
+  &__text {
     font-size: 18px;
     line-height: 1.55;
     width: 606px;
     margin-top: 26px;
     margin-left: 30px;
-}
+  }
 
-.solution-button {
+  &__button {
     background-color: var(--accent);
     color: var(--main);
     font-size: 18px;
@@ -42,14 +41,17 @@
     margin-top: 17px;
     margin-left: 30px;
     padding: 11px 42px;
-    transition: background-color 250ms linear;
-}
+    transition: background-color 250ms linear, color 250ms linear, border 250ms linear;
+  }
 
-.solution-button:hover,
-.solution-button:hover {
-    background-color: var(--button-accent);
-}
+  &__button:hover,
+  &__button:hover {
+    background-color: var(--main);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
 
-.solution-img {
+  &__img {
     margin-left: -30px;
+  }
 }

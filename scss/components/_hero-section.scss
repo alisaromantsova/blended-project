@@ -1,22 +1,21 @@
 .hero {
-    padding-top: 270px;
-    padding-bottom: 293px;
-    background-image: url('../images/background-img.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-color: #000; */
-}
+  padding-top: 270px;
+  padding-bottom: 293px;
+  background-image: url('../images/background-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #000; */
 
-.hero-title {
+  &__title {
     margin-bottom: 25px;
     font-weight: 300;
     font-size: 55px;
     line-height: 1.2;
     text-align: center;
     color: var(--hero-text-color);
-}
+  }
 
-.hero-text {
+  &__text {
     padding-bottom: 29px;
     font-size: 22px;
     line-height: 1.68;
@@ -24,9 +23,9 @@
     color: var(--hero-text-color);
     border: none;
     outline: none;
-}
+  }
 
-.hero-button {
+  &__button {
     font-family: inherit;
     display: flex;
     gap: 10px;
@@ -44,14 +43,15 @@
     transition: background-color 250ms linear, color 250ms linear;
     outline: none;
     border: none;
-  
-}
+  }
 
-.hero-button:hover,
-.hero-button:focus {
-    background-color:var(--main);
+  &__button:hover,
+  &__button:focus {
+    background-color: var(--main);
     color: var(--accent);
-}
-.contacts-icon{
-fill: currentColor;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
 }
