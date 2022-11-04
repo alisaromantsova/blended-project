@@ -304,7 +304,11 @@ img {
   color: var(--dark);
 }
 
+<<<<<<< Updated upstream
 .subtitle-gallery {
+=======
+.gallery__subtitle {
+>>>>>>> Stashed changes
   margin-bottom: 15px;
   font-size: 20px;
   line-height: 1.7;
@@ -380,8 +384,15 @@ img {
   transition: background-color 250ms linear;
 }
 
+<<<<<<< Updated upstream
 .blog-button:hover {
   background-color: var(--blue-button-accent);
+=======
+.blog__button:hover,
+.blog__button:focus {
+  color: var(--second-accent);
+  background-color: var(--main);
+>>>>>>> Stashed changes
 }
 
 .blog-img {
