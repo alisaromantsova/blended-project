@@ -1,4 +1,6 @@
 {
+<<<<<<< HEAD
+=======
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",
@@ -14,5 +16,6 @@
   "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.autoprefix": ["defaults"],
+>>>>>>> 76bcf3cc00d40a3ebf3df8cd7dbe2ce3e4a99612
   "liveServer.settings.port": 5501
 }

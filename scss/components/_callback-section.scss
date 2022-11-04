@@ -51,7 +51,8 @@
 
 .callback__button:hover,
 .callback__button:focus {
-  background-color: var(--button-accent);
+  background-color: var(--main);
+  color: var(--accent);
 }
 
 .callback__img {
