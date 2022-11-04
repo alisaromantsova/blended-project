@@ -1,0 +1,72 @@
+.logo {
+    font-size: 35px;
+    line-height: 1.2;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    transition: color 250ms linear;
+}
+
+.logo__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.logo__accent {
+    color: var(--main);
+    transition: color 250ms linear;
+}
+
+.logo:hover,
+.logo:focus{
+    color: var(--main);
+}
+.logo:hover .logo__accent,
+.logo:focus .logo__accent {
+    color: var(--accent);
+}
+.nav-block{
+    display: flex;
+    align-items: center;
+    padding: 11px 50px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav-block__menu {
+    display: flex;
+    margin-left: auto;
+    gap: 38px;
+}
+.nav-block__link {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.56;
+    color: #ffffff;
+    transition: color 250ms linear;
+}
+.nav-block__link:hover,
+.nav-block__link:focus {
+    color: var(--accent);
+}
+.nav-block__link::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom:-10px;
+    left: 0;
+    background-color: var(--accent);
+    opacity: 0;
+    transition: opacity 250ms linear;
+}
+.nav-block__link:hover,
+.nav-block__link:focus {
+    color: var(--accent);
+}
+.nav-block__link:hover.nav-block__link::after,
+.nav-block__link:focus.nav-block__link::after{
+    opacity: 1;
+}

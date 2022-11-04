@@ -1,0 +1,50 @@
+.services {
+    background: var(--pale);
+    padding-top: 40px;
+    padding-bottom: 19px;
+}
+
+.servises-list {
+    display: flex;
+    gap: 71px;
+    justify-content: center;
+}
+
+.servises-item {
+    width: 362px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servises-icon {
+    height: 67px;
+    width: 67px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    color: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servises-icon>svg {
+    fill: currentColor;
+}
+
+.title-services {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.65;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.text-services {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}

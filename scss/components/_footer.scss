@@ -1,0 +1,34 @@
+.footer {
+    padding-top: 20px;
+    padding-bottom: 16px;
+    background-color: var(--dark);
+}
+
+.footer__list {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 25px;
+    justify-content: center;
+}
+
+.footer__social {
+    cursor: pointer;
+}
+
+.footer__social:hover .footer__icon,
+.footer__social:focus .footer__icon {
+    cursor: pointer;
+    fill: var(--accent);
+}
+
+.footer__icon {
+    fill: var(--main);
+    transition: fill 250ms linear;
+}
+
+.footer__text {
+    color: var(--main);
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
