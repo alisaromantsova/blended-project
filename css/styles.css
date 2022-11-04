@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-:root {
-  --accent: #28a745;
-  --main: #ffffff;
-  --dark: #333333;
-  --second-accent: #0284d0;
-  --pale: #f4f4f4;
-  --grey: #808080;
-  --hero-text-color: #e9e9e9;
-  --light-bcg: #e5e5e5;
-  --bcg-footer: #000;
-}
-=======
->>>>>>> 76bcf3cc00d40a3ebf3df8cd7dbe2ce3e4a99612
 
 
 
@@ -21,79 +7,10 @@
 
 
 /* section team  Ulia*/
-<<<<<<< HEAD
-.section-team {
-  background-color: var(--accent);
-  color: var(--main);
-  display: flex;
-}
-.section-team img {
-  max-width: 100%;
-}
-.section-team .paragraf {
-  font-size: 20px;
-  line-height: 1.65;
-  margin-top: 84px;
-  margin-left: 30px;
-  margin-right: 44px;
-}
-.section-team .title {
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 1.26;
-  margin-top: 5px;
-  margin-left: 44px;
-}
-.section-team .paragraf-secondary {
-  font-size: 18px;
-  line-height: 1.55;
-  width: 606px;
-  margin-top: 26px;
-  margin-left: 30px;
-}
-.section-team button {
-  background-color: var(--accent);
-  color: var(--main);
-  font-size: 18px;
-  line-height: 1.55;
-  cursor: pointer;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  margin-top: 17px;
-  margin-left: 30px;
-  padding: 11px 42px;
-}
-/* gallery Oksana */
-
-.gallery {
-  background: var(--light-bcg);
-  color: var(--dark);
-}
-
-.subtitle-gallery {
-  font-size: 20px;
-  line-height: 1.7;
-  text-align: center;
-}
-
-.title-gallery {
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 1.3;
-  text-align: center;
-}
-
-.text-gallery {
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-}
-=======
 
 /* gallary */
 
 /* blog */
->>>>>>> 76bcf3cc00d40a3ebf3df8cd7dbe2ce3e4a99612
 
 /* team section Margo*/
 
@@ -102,41 +19,3 @@
 /* section Request Callback */
 
 
-<<<<<<< HEAD
-.section-callback .title {
-  color: var(--dark);
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 1.2631;
-  margin-top: 78px;
-  margin-left: 30px;
-}
-
-.section-callback button {
-  color: var(--main);
-  background-color: var(--accent);
-  font-size: 18px;
-  line-height: 1.39;
-  cursor: pointer;
-  text-align: center;
-  position: absolute;
-  border-radius: 5px;
-  width: 620px;
-  height: 42px;
-  margin-top: 210px;
-  margin-left: 30px;
-  border: none;
-}
-
-/* footer Oksana */
-footer {
-  background-color: var(--bcg-footer);
-}
-.text footer {
-  color: var(--main);
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-}
-=======
->>>>>>> 76bcf3cc00d40a3ebf3df8cd7dbe2ce3e4a99612

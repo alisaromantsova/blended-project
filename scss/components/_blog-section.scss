@@ -47,8 +47,11 @@
     transition: background-color 250ms linear;
 }
 
-.blog-button:hover {
-    background-color: var(--blue-button-accent);
+.blog-button:hover,
+.blog-button:focus
+ {
+    color: var(--second-accent);
+    background-color: var(--main);
 }
 
 .blog-img {
